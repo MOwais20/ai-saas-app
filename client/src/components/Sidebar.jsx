@@ -23,7 +23,7 @@ const Sidebar = ({ sidebar, setSidebar }) => {
         <div className={`w-60 bg-white border-r border-gray-200 flex flex-col justify-between items-center mx-sm:absolute top-14 bottom-0 ${sidebar ? 'translate-x-0' : 'max-sm:-translate-x-full'} transition-all duration-300 ease-in-out`}>
             <div className='my-7 w-full'>
 
-                <img src={user.imageUrl} alt="User avatar" className='w-13 rounded-full mx-auto' />
+                <img src={user?.imageUrl} alt="User avatar" className='w-13 rounded-full mx-auto' />
 
                 <h1 className='mt-1 text-center'>{user.fullName}</h1>
                 <div>
@@ -41,7 +41,7 @@ const Sidebar = ({ sidebar, setSidebar }) => {
             </div>
             <div className='w-full border-t border-gray-200 p-4 px-7 flex items-center justify-between'>
                 <div onClick={openUserProfile} className='flex gap-2 item-center cursor-pointer'>
-                    <img src={user.imageUrl} alt="User avatar" className='w-8 rounded-full' />
+                    <img src={user?.imageUrl} alt="User avatar" className='w-8 rounded-full' />
                     <div>
                         <h1 className='text-sm font-medium'>{user.fullName}</h1>
                         <p className='text-xs text-gray-500'>

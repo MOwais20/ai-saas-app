@@ -26,7 +26,7 @@ const BlogTitles = () => {
 
           <div className='mt-3 flex gap-3 flex-wrap sm:max-w-9/11'>
             {BlogCategories.map((item, index) => (
-              <span onClick={() => setSelectedCategory(item)} className={`text-xs px-4 py-2 border rounded-full cursor-pointer ${selectedCatagory === item ? ' bg-purple-50 bg-purple-700' : 'text-gray-500 border-gray-300'}`} key={item}>{item}</span>
+              <span onClick={() => setSelectedCategory(item)} className={`text-xs px-4 py-2 border rounded-full cursor-pointer ${selectedCategory === item ? ' bg-purple-50 bg-purple-700' : 'text-gray-500 border-gray-300'}`} key={item}>{item}</span>
             ))}
           </div>
           <br />
